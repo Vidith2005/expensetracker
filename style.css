@@ -1,0 +1,197 @@
+/* Reset padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Set full height for body and center the content */
+  body {
+    height: 100vh;            /* Full viewport height */
+    margin: 0;                /* Remove default margin */
+    display: flex;  
+    flex-direction: column;          /* Use flexbox */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    background-color: #DBDEFF;
+  }
+  
+  /* Heading styling */
+  h1 {
+    padding-top: 35px;
+    font-size: 80px;
+    font-family: 'Jersey 15', sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+ 
+  .expense-button {
+    padding-left: 5px;
+    height: 40px;
+    width: 150px;
+    color: black;
+    background-color: #D84040;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .income-button {
+    padding-left: 5px;
+    height: 40px;
+    width: 150px;
+    color: black;
+    background-color: #72FF8C;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .circle {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Buttons container styling */
+  .buttons {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  .tracker-information-box {
+    padding-bottom: 50px;
+    width: 650px;
+    background-color: rgba(255, 191, 53, 0.7);
+    align-items: center;   /* Ensure content inside the box is centered */
+    border: 1px solid black;
+    padding-top: 50px;
+    border-radius: 5px;
+  }
+  
+  .cumulative-text-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .cumulative-text{
+    
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .cumulative-field-box{
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;    /* center vertically */
+    justify-content: left;  /* align text to left */
+    padding-left: 20px;     /* padding from the left edge */
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .expenses-and-income-entries {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    align-items: center; /* Vertically align items in the row */
+}
+
+.serial-number {
+    color: black;
+    font-size: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 20px;
+    flex-basis: auto; /* Adjust if needed */
+}
+
+.transaction-category { /* "Note" field */
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1; /* Take up most of the available space */
+    flex-shrink: 1;
+    min-width: 150px; /* Ensure it doesn't collapse too much */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 20px; /* Add some space to the right of Note */
+}
+
+.transaction-date { /* "Date" field */
+    color: black;
+    font-size: 18px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px; /* Fixed width for Date */
+    min-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left; /* Align date text to the left */
+    margin-right: 20px; /* Add some space to the right of Date */
+}
+
+.transaction-value { /* "Amount" field */
+    font-weight: bolder;
+    font-size: 18px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right; /* Align amount text to the right */
+    margin-left: auto; /* Push to the far right */
+    margin-right: 30px;
+}
+
+.icon-image {
+    height: 20px;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Track Your Money</h1>
+    <div class = "buttons">
+
+        
+<!-- -------------------------Expense Button---------------------------- -->
+
+        <button class="expense-button" onclick="openExpensePopup()">
+            <div class="circle">+</div>
+            Add Expense
+             </button>
+             <div id="expensePopup" class="popup-overlay">
+                <div class="expense-pop-up-content">
+                  <h2 class="pop-up-button-heading">Expense details</h2>
+                  <div class="expense-amount-row-pop-up">
+                    <h4>Amount: </h4>
+                    <input type="number" placeholder="Enter Amount">
+                  </div>
+                  <div class="expense-note-row-pop-up">
+                    <h4>Note: </h4>
+                    <input type="text" placeholder="Enter a note">
+                  </div>
+                  <div class="expense-date-row-pop-up">
+                    <h4>Date: </h4>
+                    <input type="date">
+                  </div>
+                  
+                  <button onclick="submitTransaction('expense')">Submit</button>
+                </div>
+              </div>
+              
+ <!----------------------------Income Button---------------------------------------->
+
+              <button class="income-button" onclick="openIncomePopup()">
+                <div class="circle">+</div>
+                Add Income
+              </button>
+              <div id="incomePopup" class="popup-overlay">
+                <div class="income-pop-up-content">
+                    <h2 class="pop-up-button-heading">Expense details</h2>
+                    <div class="income-amount-row-pop-up">
+                      <h4>Amount: </h4>
+                      <input type="number" placeholder="Enter Amount">
+                    </div>
+                    <div class="income-note-row-pop-up">
+                      <h4>Note: </h4>
+                      <input type="text" placeholder="Enter a note">
+                    </div>
+                    <div class="income-date-row-pop-up">
+                      <h4>Date: </h4>
+                      <input type="date">
+                    </div>
+                    
+                    <button onclick="submitTransaction('income')">Submit</button>
+                  </div>
+              </div>
+
+
+
+<!---------------------------------Tracker Box----------------------------------------------------->
+    </div>
+    <div class="tracker-information-box">
+    <div class="cumulative-text-row">
+        <div class="cumulative-text">
+            Cumulative :
+        </div>
+        <div class="cumulative-field-box" id="net-balance">
+           
+        </div>
+    </div>
+
+    <!------------------------------Transaction----------------------------->
+    <div class="transaction-list">
+            <div class="serial-number">
+            </div>
+            <div id="expenseList" class="transaction-note">
+                </div>
+                <div  class="transaction-date">
+                    </div>
+                    <div  class="transaction-value">
+                        </div>
+      </div>
+    
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
