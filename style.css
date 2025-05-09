@@ -1,17 +1,16 @@
-/* Reset padding and margin */
 * {
     padding: 0;
     margin: 0;
   }
   
-  /* Set full height for body and center the content */
+ 
   body {
-    height: 100vh;            /* Full viewport height */
-    margin: 0;                /* Remove default margin */
+    height: 100vh;            
+    margin: 0;                
     display: flex;  
-    flex-direction: column;          /* Use flexbox */
-    justify-content: center;  /* Center content horizontally */
-    align-items: center;      /* Center content vertically */
+    flex-direction: column;         
+    justify-content: center; 
+    align-items: center;     
     background-color: #DBDEFF;
   }
   
@@ -85,7 +84,7 @@
     padding-bottom: 50px;
     width: 650px;
     background-color: rgba(255, 191, 53, 0.7);
-    align-items: center;   /* Ensure content inside the box is centered */
+    align-items: center;  
     border: 1px solid black;
     padding-top: 50px;
     border-radius: 5px;
@@ -112,9 +111,9 @@
     border: 1px solid black;
     border-radius: 0px;
     display: flex;
-    align-items: center;    /* center vertically */
-    justify-content: left;  /* align text to left */
-    padding-left: 20px;     /* padding from the left edge */
+    align-items: center;    
+    justify-content: left;  
+    padding-left: 20px;    
     padding-right: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -134,7 +133,7 @@
     border-radius: 10px;
     overflow: hidden;
     flex-wrap: nowrap;
-    align-items: center; /* Vertically align items in the row */
+    align-items: center; 
 }
 
 .serial-number {
@@ -143,38 +142,38 @@
     flex-grow: 0;
     flex-shrink: 0;
     margin-right: 20px;
-    flex-basis: auto; /* Adjust if needed */
+    flex-basis: auto; 
 }
 
-.transaction-category { /* "Note" field */
+.transaction-category { 
     color: black;
     font-size: 18px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    flex-grow: 1; /* Take up most of the available space */
+    flex-grow: 1; 
     flex-shrink: 1;
-    min-width: 150px; /* Ensure it doesn't collapse too much */
+    min-width: 150px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-right: 20px; /* Add some space to the right of Note */
+    margin-right: 20px; 
 }
 
-.transaction-date { /* "Date" field */
+.transaction-date { 
     color: black;
     font-size: 18px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 100px; /* Fixed width for Date */
+    flex-basis: 100px; 
     min-width: 100px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    text-align: left; /* Align date text to the left */
-    margin-right: 20px; /* Add some space to the right of Date */
+    text-align: left; 
+    margin-right: 20px; 
 }
 
-.transaction-value { /* "Amount" field */
+.transaction-value { 
     font-weight: bolder;
     font-size: 18px;
     flex-grow: 0;
@@ -183,8 +182,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    text-align: right; /* Align amount text to the right */
-    margin-left: auto; /* Push to the far right */
+    text-align: right; 
+    margin-left: auto; 
     margin-right: 30px;
 }
 
